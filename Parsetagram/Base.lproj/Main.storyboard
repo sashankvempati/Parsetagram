@@ -105,16 +105,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sm7-hL-vz3">
-                                                    <rect key="frame" x="8" y="11" width="359" height="345"/>
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="345"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sashank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUu-17-3Ul">
-                                                    <rect key="frame" x="23" y="364" width="66" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbI-CO-khY">
+                                                    <rect key="frame" x="23" y="385" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeA-2O-95I">
-                                                    <rect key="frame" x="97" y="364" width="263" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJP-iX-lUS">
+                                                    <rect key="frame" x="73" y="385" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -123,16 +123,19 @@
                                             <constraints>
                                                 <constraint firstItem="Sm7-hL-vz3" firstAttribute="top" secondItem="9dH-bu-OvM" secondAttribute="top" constant="8" id="7xG-Yy-hSI"/>
                                                 <constraint firstItem="Sm7-hL-vz3" firstAttribute="top" secondItem="9dH-bu-OvM" secondAttribute="top" constant="8" id="C85-46-xi6"/>
+                                                <constraint firstItem="Sm7-hL-vz3" firstAttribute="top" secondItem="9dH-bu-OvM" secondAttribute="top" constant="8" id="Cmy-7o-a1n"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NbI-CO-khY" secondAttribute="bottom" constant="8" id="Mll-Qw-SnL"/>
+                                                <constraint firstItem="GJP-iX-lUS" firstAttribute="leading" secondItem="NbI-CO-khY" secondAttribute="trailing" constant="8" id="Ngk-p2-TM4"/>
                                                 <constraint firstAttribute="trailing" secondItem="Sm7-hL-vz3" secondAttribute="trailing" constant="8" id="O4y-F7-S9U"/>
                                                 <constraint firstItem="Sm7-hL-vz3" firstAttribute="leading" secondItem="9dH-bu-OvM" secondAttribute="leading" constant="8" id="PdJ-uX-mAK"/>
-                                                <constraint firstItem="aeA-2O-95I" firstAttribute="leading" secondItem="HUu-17-3Ul" secondAttribute="trailing" constant="8" id="fd7-Dr-hFW"/>
-                                                <constraint firstItem="HUu-17-3Ul" firstAttribute="leading" secondItem="9dH-bu-OvM" secondAttribute="leadingMargin" constant="8" id="yY0-Fm-hek"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GJP-iX-lUS" secondAttribute="bottom" constant="8" id="leC-Kf-Maz"/>
+                                                <constraint firstItem="NbI-CO-khY" firstAttribute="leading" secondItem="9dH-bu-OvM" secondAttribute="leadingMargin" constant="8" id="nLX-Bv-3R2"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="captionLabel" destination="aeA-2O-95I" id="Ep9-3A-avJ"/>
+                                            <outlet property="captionLabel" destination="GJP-iX-lUS" id="fXC-7K-lNx"/>
                                             <outlet property="photoView" destination="Sm7-hL-vz3" id="QPq-Tl-Dap"/>
-                                            <outlet property="usernameLabel" destination="HUu-17-3Ul" id="jlt-ko-A7A"/>
+                                            <outlet property="usernameLabel" destination="NbI-CO-khY" id="j5z-fc-m34"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
